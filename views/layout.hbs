@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Чистый воздух</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Itim&family=Noto+Sans+JP:wght@500&family=Ubuntu:wght@500&display=swap"
+    rel="stylesheet">
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?key={{GOOGLEKEY}}&callback=initMap&libraries=&v=weekly"></script>
+  <script defer src="/javascripts/script.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div id="logo"></div>
+    <div id="instructions">
+      <div id="geoLocation">
+        <button>ПРОВЕРИТЬ ГЕОЛОКАЦИЮ</button>
+      </div>
+      <p>или</p>
+      <div>
+        Кликните на карте и получите данные о чистоте воздуха в заданном месте
+      </div>
+    </div>
+  </div>
+  {{{body}}}
+    <div id="footer">
+      © air compare 2020
+    </div>
+</body>
+
+</html>

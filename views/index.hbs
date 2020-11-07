@@ -1,0 +1,12 @@
+<div id="chosenPlace"></div>
+<div id="map"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+  <script>bubbly({
+    blur: 20, // default is 4
+    bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`, // default is () => `hsla(0, 0%, 100%, ${r() * 0.1})`)
+    bubbles: 100, // default is Math.floor((canvas.width + canvas.height) * 0.02);
+    canvas: document.querySelector("#background"), // default is created and attached
+    colorStart: "#99f8fc", // default is blue-ish
+    colorStop: "#99f8f1",// default is blue-ish
+});</script>
